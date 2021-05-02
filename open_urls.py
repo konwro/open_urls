@@ -6,8 +6,8 @@ import webbrowser
 import time
 
 # Step 1: load the input file with URLs to open (with 'url' column name)
-urls_to_open = pd.read_csv(r'/home/wk/OneDrive/KALI/test_run/open_urls/urls.txt')
-# urls_to_open = pd.read_excel(r'/home/wk/OneDrive/KALI/test_run/open_urls/urls.xlsx')
+urls_to_open = pd.read_csv(r'/filepath/urls.txt')
+# urls_to_open = pd.read_excel(r'/filepath/urls.xlsx')
 # print(urls_to_open.head())
 
 # Step 2: specify browser
@@ -23,7 +23,3 @@ for url in urls_to_open['url']:
 # Step 4: operation summary
 print('======================All URLs have been opened======================')
 print('No. of opened URLs: %d' %(len(urls_to_open)))
-
-# Step 5: TBD
-
-# PUSH TO GITHUB WHEN FUNCTIONAL 
